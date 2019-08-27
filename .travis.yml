@@ -3,10 +3,11 @@ language: sh
 
 before_install: choco install python --version 3.6.8
 env: PATH=/c/Python36:/c/Python36/Scripts:$PATH
-install: pip install -U pip setuptools twine wheel
+install: pip install --user --upgrade pip setuptools twine wheel
 script: python --version
 
 deploy:
+  skip_cleanup: true
   on:
     branch: master
     # tags: true
