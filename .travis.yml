@@ -8,6 +8,6 @@ deploy:
   skip_cleanup: true
   on:
     branch: master
-    # tags: true
+    tags: true
   provider: script
   script: bash ./.travis/deploy.sh
