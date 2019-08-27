@@ -2,6 +2,8 @@ os: windows
 language: sh
 
 install: choco install python --version 3.6.8
+env: PATH=/c/Python36:/c/Python36/Scripts:$PATH
+script: python --version
 
 deploy:
   on:
