@@ -18,7 +18,7 @@ setup(
     description="A precompiled version of pthreads-win.",
     long_description=readme_text,
     long_description_content_type="text/markdown",
-    version="0.dev2",
+    version="1",
     url="https://github.com/pupil-labs/pupil-pthreads-win",
     license="MIT License",
     author="Pupil Labs GmbH",
