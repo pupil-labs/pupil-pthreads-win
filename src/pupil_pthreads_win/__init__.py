@@ -1,4 +1,4 @@
-__version__ = "0.dev0"
+__version__ = "0.dev2"
 
 import logging
 import platform

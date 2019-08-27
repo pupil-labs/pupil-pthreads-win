@@ -1,5 +1,8 @@
-os: windows
-language: sh
+language: python
+python: "3.6"
+
+install: pip3 install wheel
+script: python3 ./setup.py sdist bdist_wheel
 
 deploy:
   skip_cleanup: true
@@ -7,11 +10,4 @@ deploy:
     branch: master
     # tags: true
   provider: script
-  script:
-    - pip install twine
-    - python ./setup.py bdist_wheel
-    - >
-      twine upload
-      --username "pupil-labs"
-      --password "$PYPI_APITOKEN"
-      ./dist/*
+  script: bash ./.travis/deploy.sh
