@@ -12,8 +12,8 @@ package_data = [
 
 setup(
     name="pupil-pthreads-win",
-    # url="https://github.com/pupil-labs/github-2-clickup",
     version="0.dev0",
+    url="https://github.com/pupil-labs/pupil-pthreads-win",
     license="MIT License",
     author="Pupil Labs GmbH",
     author_email="pypi@pupil-labs.com",
