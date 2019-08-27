@@ -1,0 +1,11 @@
+os: windows
+language: sh
+
+deploy:
+  on:
+    branch: master
+    # tags: true
+  provider: pypi
+  user: pupil-labs
+  password : $PYPI_APITOKEN
+  distributions: "bdist_wheel"
