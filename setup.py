@@ -1,6 +1,9 @@
 from setuptools import setup
 from pathlib import Path
 
+with open("README.md") as f:
+    readme_text = f.read()
+
 package_dir = "src"
 package = "pupil_pthreads_win"
 
@@ -12,6 +15,9 @@ package_data = [
 
 setup(
     name="pupil-pthreads-win",
+    description="A precompiled version of pthreads-win.",
+    long_description=readme_text,
+    long_description_content_type="text/markdown",
     version="0.dev0",
     url="https://github.com/pupil-labs/pupil-pthreads-win",
     license="MIT License",
