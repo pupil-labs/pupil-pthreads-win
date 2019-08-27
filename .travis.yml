@@ -1,9 +1,10 @@
 os: windows
 language: sh
 
-install: choco install python --version 3.6.8
-env: PATH=/c/Python36:/c/Python36/Scripts:$PATH
-script: python --version
+before_install:
+  - python --version || true
+  - choco list --local-only
+install: pip install -U pip setuptools twine wheel
 
 deploy:
   on:
