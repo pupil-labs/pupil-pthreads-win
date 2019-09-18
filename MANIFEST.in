@@ -1,1 +1,2 @@
-include src/pupil_pthreads_win/data/lib/x64/pthreadVC2.dll
+include *.md
+recursive-include src *
