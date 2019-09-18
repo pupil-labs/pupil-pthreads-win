@@ -8,6 +8,11 @@ from setuptools import setup
 with open("README.md") as f:
     readme_text = f.read()
 
+with open("CHANGELOG.md") as f:
+    changelog_text = f.read()
+
+long_description = f"{readme_text}\n\n{changelog_text}"
+
 package_dir = "src"
 package = "pupil_pthreads_win"
 
@@ -33,7 +38,7 @@ def read_version():
 setup(
     name="pupil-pthreads-win",
     description="A precompiled version of pthreads-win.",
-    long_description=readme_text,
+    long_description=long_description,
     long_description_content_type="text/markdown",
     version=read_version(),
     url="https://github.com/pupil-labs/pupil-pthreads-win",
