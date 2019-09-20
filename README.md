@@ -1,4 +1,9 @@
 # pupil-pthreads-win
+[![Build Status](https://travis-ci.org/pupil-labs/pupil-pthreads-win.svg?branch=master)](https://travis-ci.org/pupil-labs/pupil-pthreads-win)
+[![PyPI](https://img.shields.io/pypi/v/pupil-pthreads-win)](https://pypi.org/project/pupil-pthreads-win/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pupil-pthreads-win)](https://pypi.org/project/pupil-pthreads-win/)
+[![PyPI - Format](https://img.shields.io/pypi/format/pupil-pthreads-win)](https://pypi.org/project/pupil-pthreads-win/)
+
 
 This is a precompiled version of pthreads for windows wrapped in a python package.
 We use it as dependency for various modules for the pupil core software.
